@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+int A = 0;
+int B = 0;
+int C = 0;
+int S = 0;
+int main()
+{
+    printf("ilk sayiyi giriniz:     \n");
+    scanf("%d", &A);
+    printf("ikinci sayiyi giriniz:     \n");
+    scanf("%d", &B);
+    printf("ucuncu sayiyi giriniz:     \n");
+    scanf("%d", &C);
+
+    if(A > B){
+            S = A;
+            A = B;
+            B = S;
+    }
+
+    if(A > C){
+            S = A;
+            A = C;
+            C = S;
+    }
+
+    if(B > C){
+            S = B;
+            B = C;
+            C = S;
+    }
+
+    printf("Kucukten buyuge siralama:    %d %d %d\n", A,B,C);
+}
