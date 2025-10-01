@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+float a = 0;
+int main()
+{
+    printf("Pozitif negatifligini ogrenmek istediginiz sayi:\n");
+    scanf("%f", &a);
+
+    if(a>0)
+    {
+        printf("Girilen sayinin degeri pozitiftir");
+    }
+
+    else if(a<0)
+    {
+        printf("Girilen sayinin degeri negatiftir");
+    }
+
+    else if(a=0)
+    {
+        printf("Girilen sayi 0'dir");
+    }
+    else
+        printf("Kontrol edilmeye uygun bir sayi girilmedi");
+}
