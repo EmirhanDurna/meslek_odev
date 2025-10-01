@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+float A = 0;
+float S = 0;
+int main()
+{
+    printf("Uzerinde islem yaptirmak istediginiz ilk sayi:       \n");
+    scanf("%f", &A);
+
+    printf("Uzerinde islem yaptirmak istediginiz ikinci sayi;      \n");
+    scanf("%f", &S);
+
+    printf("Sayilarin toplami: %f\n", A + S);
+    printf("Sayilarin farki: %f\n", A - S);
+
+    if(S==0)
+    {
+        printf("Bolme islemi tanimsiz   \n");
+    }
+    else
+       {
+         printf("Sayilarin bolumu:%f\n", A / S);
+       }
+       printf("Sayilarin carpimi:%f\n", A * S);
+    return 0;
+}
