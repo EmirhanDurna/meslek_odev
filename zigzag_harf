@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <unistd.h>
+int sayi = 0;
+char harf= 0;
+int main() {
+
+    printf("bir harf girin: ");
+    scanf (" %c",&harf);
+
+    int A = 0, S = 0, dA = 1, dS = 1, sayac = 0;
+    int adim = 30;
+
+    while (1) {
+        for (int i = 0; i < S; i++) printf(" ");
+        printf("%c\n",harf);
+        usleep(150000);
+
+        A += dA;
+        S += dS;
+        sayac++;
+
+        if (sayac % adim == 0) dS *= -1;
+
+        if (S < 0) S = 0;
+        if (S > 40) S = 40;
+    }
+
+}
